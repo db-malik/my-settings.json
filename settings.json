@@ -75,7 +75,7 @@
   "editor.suggest.showStatusBar": true,
   "npm.packageManager": "yarn",
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-  "editor.tabSize": 3,
+  "editor.tabSize": 4,
   "editor.minimap.maxColumn": 80,
   "typescript.inlayHints.parameterNames.enabled": "literals",
   "vsintellicode.features.python.deepLearning": "disabled",
@@ -90,11 +90,13 @@
   "editor.unfoldOnClickAfterEndOfLine": true,
   "[markdown]": {
     "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off"
-    }
+      "comments": true,
+      "strings": false,
+      "other": false
+    },
+    "editor.acceptSuggestionOnCommitCharacter": true
   },
+
   "workbench.editor.decorations.colors": true,
   "editor.codeLensFontFamily": "\"JetBrains Mono\"",
   "vsintellicode.java.completionsEnabled": false,
@@ -129,7 +131,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "references.preferredLocation": "view",
   "workbench.editor.limit.enabled": true,
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "off",
   "gitlens.blame.avatars": false,
   "editor.snippetSuggestions": "top",
   "explorer.confirmDelete": false,
@@ -318,7 +320,6 @@
   "turboConsoleLog.includeFileNameAndLineNum": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "typescript.referencesCodeLens.showOnAllFunctions": true,
-  "editor.accessibilitySupport": "off",
   "[handlebars]": {
     "editor.formatOnSave": false
   },
@@ -639,5 +640,7 @@
     "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*"
   },
   "tabnine.experimentalAutoImports": true,
-  "terminal.integrated.tabs.enableAnimation": false
+  "terminal.integrated.tabs.enableAnimation": false,
+  "emmet.showExpandedAbbreviation": "never",
+  "files.autoGuessEncoding": true
 }
